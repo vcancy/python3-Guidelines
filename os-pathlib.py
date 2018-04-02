@@ -23,3 +23,6 @@ test_path = path / 'test'
 for image_path in path.iterdir():
 	with image_path.open(encoding='utf-8') as f:
 		print(f.readlines())
+
+# 递归文件夹的通配符
+Path('/path/').glob('**/*.jpg')
